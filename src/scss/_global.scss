@@ -33,6 +33,74 @@ body {
   }
 }
 
+.main__body {
+  position: relative;
+}
+
+.body-decor {
+  position: absolute;
+  width: 356px;
+  height: 356px;
+  border-radius: 100%;
+  background: #2A3E84;
+  filter: blur(175px);
+  z-index: -2;
+
+  @media (max-width: $breakpoint992) {
+    display: none;
+  }
+}
+
+.body-decor:nth-child(1) {}
+
+.body-decor:nth-child(2) {}
+
+.body-decor:nth-child(3) {
+  top: 0;
+  left: 0;
+}
+
+.body-decor:nth-child(4) {
+  top: 20%;
+}
+
+.body-decor:nth-child(5) {
+  top: 40%;
+}
+
+.body-decor:nth-child(6) {
+  top: 60%;
+}
+
+.body-decor:nth-child(7) {
+  top: 80%;
+}
+
+.body-decor:nth-child(8) {
+  top: 0%;
+  right: 0;
+}
+
+.body-decor:nth-child(9) {
+  top: 40%;
+  right: 0;
+}
+
+.body-decor:nth-child(10) {
+  top: 50%;
+  right: 0;
+}
+
+.body-decor:nth-child(11) {
+  top: 60%;
+  right: 0;
+}
+
+.body-decor:nth-child(12) {
+  top: 80%;
+  right: 0;
+}
+
 // Animations
 // Fade
 @keyframes fade {

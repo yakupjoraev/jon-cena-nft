@@ -1,0 +1,209 @@
+.giveaways {
+  padding: 125px 0;
+
+  @media (max-width: $breakpoint768) {
+    padding: 70px 0;
+  }
+
+  // .giveaways__title
+
+  &__title {
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 36px;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--text-color);
+
+    @media (max-width: $breakpoint768) {
+      font-size: 24px;
+      line-height: 32px;
+    }
+  }
+
+  // .giveaways__subtitle
+
+  &__subtitle {
+    margin-bottom: 60px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--text-color-2);
+
+    @media (max-width: $breakpoint768) {
+      margin-bottom: 30px;
+      font-size: 18px;
+
+    }
+  }
+
+  // .giveaways__list
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 384px);
+    justify-content: space-between;
+
+    @media (max-width: 1250px) {
+      grid-template-columns: repeat(2, 384px);
+      gap: 50px;
+      justify-content: center;
+    }
+
+    @media (max-width: $breakpoint992) {
+      grid-template-columns: repeat(1, 384px);
+      gap: 30px;
+    }
+
+    @media (max-width: $breakpoint480) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  // .giveaways__card
+
+  &__card {
+    padding: 25px 22px;
+    background-image: url('../img/card-bg.svg');
+    background-repeat: no-repeat;
+
+    @media (max-width: $breakpoint480) {
+      background-image: none;
+      padding: 15px;
+      border: 1px solid var(--primary-color);
+      border-radius: 8px;
+    }
+  }
+
+  // .giveaways__card-header
+
+  &__card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+
+    @media (max-width: $breakpoint480) {
+      margin-bottom: 15px;
+    }
+  }
+
+  // .giveaways__card-currents
+
+  &__card-currents {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  // .giveaways__card-current
+
+  &__card-current {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--text-color);
+  }
+
+  // .giveaways__card-price
+
+  &__card-price {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--primary-color);
+  }
+
+  // .giveaways__card-price-img
+
+  &__card-price-img {}
+
+  // .giveaways__card-link
+
+  &__card-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    padding: 0 16px;
+    border: 1px solid transparent;
+    background-color: var(--primary-color);
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--text-color);
+    transition: background-color 0.2s linear;
+
+    &:hover {
+      border: 1px solid var(--primary-color);
+      background-color: transparent;
+    }
+  }
+
+  // .giveaways__card-img
+
+  &__card-img {
+    margin-bottom: 25px;
+
+    @media (max-width: $breakpoint480) {
+      margin-bottom: 15px;
+      max-width: 100%;
+    }
+  }
+
+  // .giveaways__card-footer
+
+  &__card-footer {
+    display: flex;
+    align-items: center;
+  }
+
+  // .giveaways__card-user
+
+  &__card-user {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 10px;
+    width: 270px;
+
+    @media (max-width: $breakpoint480) {
+      width: 100%;
+    }
+  }
+
+  // .giveaways__card-user-icon
+
+  &__card-user-icon {
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+  }
+
+  // .giveaways__card-user-name
+
+  &__card-user-name {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #789EAC;
+  }
+
+  // .giveaways__card-label
+
+  &__card-label {
+    margin-left: auto;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--text-color);
+  }
+}

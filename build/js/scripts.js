@@ -144,12 +144,12 @@ if (localStorage["timer"]) {
 }
 
 function onStart() {
-  newDate = Date.now() + 24 * 60 * 60 * 1000; // Таймер на 60 минут
+  newDate = Date.now() + 23 * 59 * 58 * 1000; // Таймер на 60 минут
   timer(); // Инициализация текста в элементах.
   if (!intervalId) intervalId = setInterval(timer, 1000);
   localStorage["timer"] = new Date(newDate).toISOString();
 }
-
+onStart()
 
 function timer() {
   var now = Date.now(),

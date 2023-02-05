@@ -114,6 +114,9 @@
   // .hero__time
 
   &__time {
+    display: flex;
+    align-items: center;
+    width: 120px;
     font-weight: 500;
     font-size: 30px;
     line-height: 45px;
